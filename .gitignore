@@ -47,6 +47,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Visual Studio
+.vs/
+
 #Игнор логов и зависимостей
 npm-debug.log*
 node_modules/
