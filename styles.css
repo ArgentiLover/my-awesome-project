@@ -40,6 +40,10 @@ body {
     line-height: 1.5;
 }
 
+/* Мин высота контента в main */
+main {min-height:100vh}
+
+
 /* Формы: размеры, отступы, визуальный порядок */
 label {
   display: block;
