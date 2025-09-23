@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="main.js" defer></script>
+    <script src="theme.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Главная - Название вашего сайта</title>
@@ -24,15 +25,31 @@
                        href="about.html">О нас</a>
                 </li>
                 <li class="site-nav__item">
-                    <a class="site-nav__link site-nav__link--
-cta" href="#contacts">Связаться</a>
+                    <a class="site-nav__link site-nav__link--cta" href="#portfolio">Наше портфолио</a>
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--cta" href="#contacts">Связаться</a>
                 </li>
             </ul>
         </nav>
+        <!-- Кнопка переключения темы -->
+        <button class="theme-toggle" type="button" aria-pressed="false">Тема</button>
     </header>
     <!-- Уникальное основное содержимое страницы -->
     <main>
-        <h1>Добро пожаловать на наш сайт!</h1>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Добро пожаловать на наш сайт!</h1>
+                <p>Мы создаём современные и эффективные решения</p>
+            </div>
+        </section>
+
+        <div class="media">
+            <iframe src="https://rutube.ru/play/embed/59ff8a72ade90184dbb57d33979ae147"
+                    title="Видео о проекте (100%)"
+                    <!-- важно для доступности --> 
+                    allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
 
         <!-- Секция 1 с якорем -->
         <section id="services">
@@ -52,12 +69,20 @@ cta" href="#contacts">Связаться</a>
             <h2>Контактная информация</h2>
             <p>Наши контакты...</p>
             <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
-         </section>
-     </main>
+        </section>
+    </main>
      <!-- Подвал сайта -->
-     <footer>
-         <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
-         <p>Телефон: +7 (123) 456-78-90</p>
-     </footer>
+    <footer>
+        <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <!-- Изображение -->
+        <img class="card__img" src="assets/reba-spike-640.jpg"
+             srcset="assets/reba-spike-640.jpg 640w, assets/reba-spike-960.jpg 960w, assets/reba-spike-1280.jpg 1280w"
+             sizes=" (max-width: 700px) 92vw, (max-width: 1200px) 640px, (max-width: 1800px) 960px, 1280"
+             alt="Проект: котейка"
+             loading="lazy">
+    </footer>
+
 </body>
-</html>
+</html
+>
